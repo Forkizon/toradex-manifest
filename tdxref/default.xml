@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
-
   <include name="base/pinned.xml"/>
   <include name="bsp/pinned-nxp.xml"/>
-  <include name="bsp/pinned-ti.xml"/>
   <include name="bsp/pinned-tdx.xml"/>
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="9ae2fe2696b10f5dc4253c4f467dc388139860bd" upstream="scarthgap"/>
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="afbbe28cee4af2c6760aaead43a4a3ef29969809" upstream="scarthgap"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="4ba1cebc6909ee7a83d569e8cc748f69e6a0a24f" upstream="scarthgap-7.x.y"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="65a1511acecc37d9e9252c588bc57ac7944c92f5" upstream="scarthgap-7.x.y">
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="1f7eeb8e84811fa79b98f236ade42dc52d44cfc6" upstream="walnascar"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="67b3f02749f905bfd00e00673f83d600ff0a7ac2" upstream="walnascar"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="ee41e93f62838a054516a1a6cd485b7efd8b0983" upstream="walnascar">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>

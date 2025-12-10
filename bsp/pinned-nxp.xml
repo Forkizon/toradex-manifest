@@ -2,7 +2,8 @@
 <manifest>
   <remote alias="repo" fetch="https://github.com/Freescale" name="githf"/>
 
-  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="70c83e96c7f75e73245cb77f1b0cada9ed4bbc6d" upstream="scarthgap"/>
-  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="b9d6a5d9931922558046d230c1f5f4ef6ee72345" upstream="scarthgap"/>
-  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="902dde8c5bd29bb507ac8d37772565a6c9ab77cd" upstream="scarthgap"/>
+  <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="b68089f2648d712b9406d0e88c71758913267f81" upstream="walnascar"/>
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="5ba0c7cfdba9bc7c4495f0cdf1c195f45b7164a6" upstream="walnascar"/>
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="b9c3536b68271c420fe5de36fc284781ceaa32ab" upstream="walnascar"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="7815951fa743abaaccbcfd0377b377c399aa23e6" upstream="walnascar"/>
 </manifest>

@@ -36,9 +36,3 @@ repo-sync:
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tdxref/next.xml
     - ../bin/repo sync
-    - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m torizon/default.xml
-    - ../bin/repo sync
-    - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m torizon/integration.xml
-    - ../bin/repo sync
-    - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m torizon/next.xml
-    - ../bin/repo sync

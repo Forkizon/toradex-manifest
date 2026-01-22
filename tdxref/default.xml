@@ -6,7 +6,7 @@
 
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="1f7eeb8e84811fa79b98f236ade42dc52d44cfc6" upstream="walnascar"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="67b3f02749f905bfd00e00673f83d600ff0a7ac2" upstream="walnascar"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="ee41e93f62838a054516a1a6cd485b7efd8b0983" upstream="walnascar">
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="24b76ddb1150a28ad49faf7a997bfe317e150276" upstream="walnascar">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>

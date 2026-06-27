@@ -2,13 +2,14 @@
 <manifest>
   <remote alias="repo" fetch="https://github.com/synaptics-astra" name="synaptics"/>
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
-  <remote alias="repo" fetch="https://github.com/torizon" name="torizon"/>
+  <remote alias="repo" fetch="https://github.com/Forkizon" name="torizon"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org" name="yp"/>
   <remote alias="repo" fetch="https://code.qt.io/yocto" name="qt"/>
   <remote alias="repo" fetch="https://github.com/OSSystems" name="ossystems"/>
   <remote alias="repo" fetch="https://github.com/kraj" name="kraj"/>
   <remote alias="repo" fetch="https://github.com/openembedded" name="oe"/>
   <remote alias="repo" fetch="https://github.com/sbabic" name="swupdate"/>
+  <remote alias="repo" fetch="https://github.com/iris-GmbH" name="iris"/>
 
   <default sync-j="4" sync-s="true"/>
 
@@ -19,6 +20,7 @@
 
   <project name="meta-synaptics" path="layers/meta-synaptics" remote="synaptics" revision="990a66e0111040ead67b0357a0330c55ca62a602"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="14d693d72551d8759c818b00d32bcdf9fc4c6063"/>
+  <project name="meta-cyclonedx" path="layers/meta-cyclonedx" remote="iris" revision="63d3b3495b85467b396790a0072fd73703a0987c"/>
 
   <project name="meta-browser" path="layers/meta-browser" remote="ossystems" revision="85eeb6b50883d22c977396f5e8fe211a7961cf2e"/>
   <project name="meta-clang" path="layers/meta-clang" remote="kraj" revision="7cf54f70cebe897d844f649024322bb096d7cb50"/>

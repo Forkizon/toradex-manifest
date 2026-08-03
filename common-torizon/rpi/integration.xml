@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote alias="repo"
+            fetch="https://github.com/agherzan"
+            name="agherzan" />
+
+    <remote alias="repo"
+            fetch="https://github.com/uptane"
+            name="uptane" />
+
+    <remote alias="repo"
+            fetch="https://github.com/Forkizon"
+            name="torizon" />
+
+    <remote alias="repo"
+            fetch="https://git.yoctoproject.org"
+            name="yp" />
+
+    <remote alias="repo"
+            fetch="https://github.com/openembedded"
+            name="oe" />
+
+    <remote alias="repo"
+            fetch="https://github.com/iris-GmbH"
+            name="iris" />
+
+    <default sync-j="4"
+             sync-s="true" />
+
+    <!-- Update the hashes of these external layers when leaving feaure freeze (to the tip of the
+    appropriate branches). -->
+    <project name="meta-raspberrypi"
+             path="layers/meta-raspberrypi"
+             remote="agherzan"
+             revision="6ca1f75017cc5d5acdb8bb05634c4bc01fa049fd" />
+
+    <project name="meta-updater"
+             path="layers/meta-updater"
+             remote="uptane"
+             revision="14d693d72551d8759c818b00d32bcdf9fc4c6063" />
+
+    <project name="meta-cyclonedx"
+             path="layers/meta-cyclonedx"
+             remote="iris"
+             revision="966af3e3e345135fd66688d6836801372d7c808e" />
+
+    <project name="meta-openembedded"
+             path="layers/meta-openembedded"
+             remote="oe"
+             revision="29a044218285fdc7fcdd63d5f0929cb3a27b6fed" />
+
+    <project name="meta-virtualization"
+             path="layers/meta-virtualization"
+             remote="yp"
+             revision="31fb0a22e0aa65b430a40fbc59dbf239eb8745aa"
+             upstream="scarthgap" />
+
+    <project name="meta-toradex-torizon"
+             path="layers/meta-toradex-torizon"
+             remote="torizon"
+             revision="scarthgap-7.x.y">
+        <linkfile dest="setup-environment"
+                  src="scripts/setup-environment" />
+    </project>
+</manifest>

@@ -27,8 +27,12 @@
     <default sync-j="4"
              sync-s="true" />
 
-    <!-- Update the hashes of these external layers when leaving feaure freeze (to the tip of the
-    appropriate branches). -->
+
+    <project name="poky"
+             path="layers/poky"
+             remote="yp"
+             revision="e146cbbc73e10fecfb7f1c26e8567a5a2873c51b" />
+
     <project name="meta-raspberrypi"
              path="layers/meta-raspberrypi"
              remote="agherzan"
